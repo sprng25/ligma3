@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="MediHub - Medical & Health Template">
+
+    <!-- ========== Page Title ========== -->
+    <title>Le Soiree - Nightclubs around Klang Valley</title>
+
+    <!-- ========== Favicon Icon ========== -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+
+    <!-- ========== Start Stylesheet ========== -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/flaticon-set.css" rel="stylesheet" />
+    <link href="assets/css/elegant-icons.css" rel="stylesheet" />
+    <link href="assets/css/magnific-popup.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet" />
+    <link href="assets/css/bootsnav.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet">
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <!-- ========== End Stylesheet ========== -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="assets/js/html5/html5shiv.min.js"></script>
+      <script src="assets/js/html5/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- ========== Google Fonts ========== -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,500,600,700,800" rel="stylesheet">
+<style>
+   /* Style for the star rating container */
+   .rating {
+            unicode-bidi: bidi-override;
+            direction: rtl;
+            text-align: left;
+        }
+
+        /* Style for the star icons */
+        .rating > span {
+            display: inline-block;
+            position: relative;
+            width: 1em;
+        }
+
+        /* Style for the empty star outline */
+        .rating > span:before {
+            content: "\2606";
+            position: absolute;
+            color: #ccc;
+        }
+
+        /* Style for the filled star */
+        .rating > span:after {
+            content: "\2605";
+            position: absolute;
+            color: gold;
+            left: 0;
+        }
+        /* Style for the map marker icon */
+        .map-marker {
+            color: yellow;
+        }
+
+        /* Style for the text */
+        .address-text {
+            color: yellow;
+        }
+        /* Style for the envelope icon */
+        .envelope-icon {
+            color: yellow;
+        }
+
+        /* Style for the email address */
+        .email-address {
+            color: yellow;
+        }
+        /* Style for the phone icon */
+        .phone-icon {
+            color: yellow;
+        }
+
+        /* Style for the phone number */
+        .phone-number {
+            color: yellow;
+        }
+        h3 {
+            color: yellow;
+        }
+        h4 {
+            color: yellow;
+        }
+        /* Style for the plus and minus buttons */
+        .quantity-button {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            background-color: #f9f11f;
+            color: rgb(4, 2, 2);
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        /* Style for the quantity input field */
+        .quantity-input {
+            width: 40px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        /* Style for text input fields */
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            font-size: 16px;
+        }
+
+        /* Style for the textarea */
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 3px 0;
+            font-size: 16px;
+        }
+        #book {
+        background-color: rgb(225, 44, 238); /* Set the button background color to pink */
+        border: none; /* Remove the button border */
+        color: rgb(234, 241, 43); /* Text color */
+        padding: 10px 20px; /* Padding around the text */
+        font-size: 16px; /* Text size */
+        cursor: pointer; /* Change cursor on hover */
+         }
+
+         /* Apply a hover effect */
+        #book:hover {
+        background-color: #ff66b2; /* Change background color on hover */
+        }
+</style>
+</head>
+
+<body>
+
+    <div class="top-bar-area inline inc-border">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 address-info text-left">
+                    <div class="info box">
+                        <ul>
+                            <li>
+                                <i class="fas fa-map-marker-alt map-marker"></i>
+                                <span class="address-text">California, TX 70240</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-envelope-open envelope-icon"></i>
+                                <span class="email-address">Info@gmail.com</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-phone phone-icon"></i>
+                                <span class="phone-number">+123 456 7890</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 social text-right">
+                    <ul>
+                        <li>
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-dribbble"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Header Top -->
+
+     <!-- Start Breadcrumb 
+    ============================================= -->
+    <div class="breadcrumb-area shadow dark bg-fixed text-light" style="background-image: url(assets/img/club3.jpg);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h1>RSVP</h1>
+                </div>
+                <div class="col-md-6 text-right">
+                    <ul class="breadcrumb">
+                        <li><a href="index-op.html"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#">Bundle Discount</a></li>
+                        <li><a href="about-2.html">Discover</a></li>
+                        <li class="active">RSVP</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Breadcrumb -->
+
+    <!-- Start Appoinment
+    ============================================= -->
+    <div class="container" style="background-image: url(assets/img/club11.jpg);">
+        <div class="container">
+            <div class="row">
+                <!-- Start Appoinment Form -->
+                <div class="col-md-6 col-md-offset-6 appoinment">
+                    <div class="appoinment-box">
+                        <div class="appointment-schedule">
+                            <ul>
+                                <li>Sat - Tue <span>8:00 - 15:30</span></li>
+                                <li>Wed - Fri <span>10:00 - 16:30</span></li>
+                            </ul>
+                        </div>
+                        <div class="heading">
+                            <h2>Night CLUBS RSVP</h2>
+                        </div>
+                        <form action="#">
+                            <div class="row">
+                                <div class="rating">
+                                    <span>&#9733;</span>
+                                    <span>&#9733;</span>
+                                    <span>&#9733;</span>
+                                    <span>&#9733;</span>
+                                    <span>&#9733;</span>
+                                    <h5>Available</h5>
+                                </div>
+                                <div class="col-md-12">
+                                <a data-animation="animated slideInUp" class="btn btn-theme border btn-md" href="index-6.html">Payment</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- End Appoinment Form -->
+            </div>
+        </div>
+    </div>
+
+    <!-- End Appoinment -->
+
+    <!-- Start Contact Area
+    ============================================= -->
+    <div id="contact" class="contact-area bg-gray text-center default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="contact-items">
+                    <div class="col-md-8 col-md-offset-2 contact-form">
+                        <div class="site-heading text-center">
+                            <h2>Fill <span>Up</span></h2>
+    
+    <div class="features-area default-padding bg-gray">
+    <div class="container">
+    <div class="row">
+    <div class="col-md-20appoinment">
+    <div class="appoinment-box"> 
+   
+                                                
+    <div class="row">
+    <div class="col-md-7">
+    <div class="form-group">
+    <h4>Fill Up Your Personal Information</h4>
+    <p>Number of People:</p>
+    <div class="quantity-button" id="decrease">-</div>
+    <input class="quantity-input" type="text" id="quantity" value="1">
+    <div class="quantity-button" id="increase">+</div>
+
+    
+    <input type="text" id="first-name" placeholder="First Name">
+    <input type="text" id="last-name" placeholder="Last Name">
+    
+    <select id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+    </select>
+
+    <select id="schedule">
+        <option value="1">Sat - Tue 8:00 - 15:30</option>
+        <option value="2">Wed - Fri 10:00 - 16:30</option>
+    </select>
+
+    <input type="text" id="email" placeholder="Your Email">
+    
+    <input type="text" id="phone" placeholder="Your Phone Number">
+    
+    <select id="payment-method">
+        <option value="credit-card">Credit Card &#x1F4B3</option> <!-- Unicode credit card icon -->
+        <option value="debit-card">Debit Card &#x1F4B3</option> <!-- Unicode credit card icon -->
+        <option value="pay-pal">PayPal &#x1F4B1</option> <!-- Unicode money with wings icon -->
+        <option value="e-wallet">E-Wallet &#x1F4B0</option> <!-- Unicode money bag icon -->
+    </select>
+
+    <textarea id="message" placeholder="Your Message"></textarea>
+
+    <br>
+    <button id="book">Book RSVP</button>
+
+    <script>
+        // JavaScript to handle the plus and minus buttons
+        document.getElementById('increase').addEventListener('click', function() {
+            var quantityInput = document.getElementById('quantity');
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+        });
+
+        document.getElementById('decrease').addEventListener('click', function() {
+            var quantityInput = document.getElementById('quantity');
+            if (parseInt(quantityInput.value) > 1) {
+                quantityInput.value = parseInt(quantityInput.value) - 1;
+            }
+        });
+
+        // JavaScript to handle the RSVP booking
+        document.getElementById('book').addEventListener('click', function() {
+            var quantity = document.getElementById('quantity').value;
+            var firstName = document.getElementById('first-name').value;
+            var lastName = document.getElementById('last-name').value;
+            var gender = document.getElementById('gender').value;
+            var gender = document.getElementById('schedule').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var paymentMethod = document.getElementById('payment-method').value;
+            var message = document.getElementById('message').value;
+
+            // Calculate total price based on quantity and payment method
+            var pricePerPerson = 10; // Replace with actual price per person
+            var totalPrice = (parseFloat(quantity) * pricePerPerson).toFixed(2);
+
+            // Generate a payment receipt
+            var paymentReceipt = "Payment Method: " + paymentMethod + "\n" +
+                                 "Total Price: $" + totalPrice;
+
+            // You can replace this with actual booking logic (e.g., sending data to a server)
+            var confirmationMessage = "RSVP booked for " + quantity + " people.\n\n" +
+                                     "First Name: " + firstName + "\n" +
+                                     "Last Name: " + lastName + "\n" +
+                                     "Gender: " + gender + "\n" +
+                                     "Schedule: " + schedule + "\n" +
+                                     "Email: " + email + "\n" +
+                                     "Phone Number: " + phone + "\n" +
+                                     "Message: " + message + "\n\n" +
+                                     "Payment Details:\n" + paymentReceipt;
+            alert(confirmationMessage);
+        });
+    </script>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+             </div>
+                 </div>
+                    </div>
+                        </div>
+    <!-- End Contact Area -->
+
+ <!-- Start Contact
+    ============================================= -->
+    <div class="top-entry-area bg-gray text-center">
+        <div class="container">
+            <div class="row">
+                <div class="item-box">
+                    <!-- Single Item -->
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <i class="fas fa-map-marked-alt"></i>
+                            <h4>Location</h4>
+                            <p>
+                                Taylor's University, Selangor, Petaling Jaya.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <i class="fas fa-phone"></i>
+                            <h4>Customer Service</h4>
+                            <h2>+123 456 7890</h2>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="col-md-4 single-item">
+                        <div class="item">
+                            <i class="fas fa-envelope-open"></i>
+                            <h4>Email</h4>
+                            <p>
+                                LeSoiree@gmail.com<br>LeSoiree_Admin@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                </div>
+            </div>
+        </div>
+       
+    <!--Thank You-->
+
+    <!-- jQuery Frameworks
+    ============================================= -->
+    <script src="assets/js/jquery-1.12.4.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/equal-height.min.js"></script>
+    <script src="assets/js/jquery.appear.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/modernizr.custom.13711.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/isotope.pkgd.min.js"></script>
+    <script src="assets/js/imagesloaded.pkgd.min.js"></script>
+    <script src="assets/js/count-to.js"></script>
+    <script src="assets/js/YTPlayer.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/bootsnav.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
